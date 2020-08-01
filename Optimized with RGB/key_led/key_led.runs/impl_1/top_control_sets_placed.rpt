@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 15:00:54 2020
+| Host         : LAPTOP-B2R9HB2C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7s15
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      5 |            1 |
+|      6 |            2 |
+|     10 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | Yes                    |             271 |           89 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              93 |           18 |
+| Yes          | No                    | Yes                    |              52 |           19 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                    Enable Signal                    |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++------------------------------+-----------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  XLJC/state_n_reg[4]_i_2_n_0 |                                                     |                                                 |                2 |              5 |
+|  system_clock/inst/clk_out1  | rgb/Key_Test_Color_0/period_100ms_o                 | rgb/RGB_LED_0/Driver_Breath_LED_0/clock_0/rst_n |                2 |              6 |
+|  RGB_LED_0/clock_rgb/clk     | rgb/RGB_LED_0/Driver_SK6805_0/data_cnt              | rgb/RGB_LED_0/Driver_SK6805_0/rst_n             |                2 |              6 |
+|  system_clock/inst/clk_out1  | rgb/RGB_LED_0/Driver_Breath_LED_0/us_cnt            | rgb/RGB_LED_0/Driver_Breath_LED_0/clock_0/rst_n |                3 |             10 |
+|  RGB_LED_0/clock_rgb/clk     | rgb/RGB_LED_0/Driver_SK6805_0/send_cnt              | rgb/RGB_LED_0/Driver_SK6805_0/rst_n             |                5 |             10 |
+|  system_clock/inst/clk_out1  | rgb/RGB_LED_0/Driver_Breath_LED_0/ms_cnt[9]_i_1_n_0 | rgb/RGB_LED_0/Driver_Breath_LED_0/clock_0/rst_n |                7 |             20 |
+|  system_clock/inst/clk_out1  |                                                     | rgb/RGB_LED_0/Driver_SK6805_0/rst_n             |                7 |             29 |
+|  RGB_LED_0/clock_rgb/clk     |                                                     | rgb/RGB_LED_0/Driver_SK6805_0/rst_n             |                9 |             31 |
+|  system_clock/inst/clk_out1  |                                                     | rgb/RGB_LED_0/Driver_Breath_LED_0/clock_1/rst_n |               13 |             36 |
+|  system_clock/inst/clk_out1  |                                                     | key_one/rst_n                                   |               29 |             77 |
+|  system_clock/inst/clk_out1  | rst_n_IBUF                                          |                                                 |               18 |             93 |
+|  system_clock/inst/clk_out1  |                                                     | rgb/RGB_LED_0/Driver_Breath_LED_0/clock_0/rst_n |               31 |             98 |
++------------------------------+-----------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

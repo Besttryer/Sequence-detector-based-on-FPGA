@@ -1,0 +1,28 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 39e40b9e3f184d61bda22a09299e56b9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'i_en' [E:/FPGA/730/key_led/key_led.srcs/sources_1/new/top.v:83]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key_filter
+Compiling module xil_defaultlib.XLJC
+Compiling module xil_defaultlib.en_out
+Compiling module xil_defaultlib.Key_Test_Color
+Compiling module xil_defaultlib.clk_division
+Compiling module xil_defaultlib.Driver_Breath_LED(LED_Bit=6'b110...
+Compiling module xil_defaultlib.Driver_SK6805
+Compiling module xil_defaultlib.Driver_RGB_LED
+Compiling module xil_defaultlib.RGB
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

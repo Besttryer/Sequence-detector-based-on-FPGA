@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../key_led.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../key_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../key_led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../key_led.srcs/sources_1/new/Driver_Breath_LED.v" \
+"../../../../key_led.srcs/sources_1/new/Driver_RGB_LED.v" \
+"../../../../key_led.srcs/sources_1/new/Key_Test_Color.v" \
+"../../../../key_led.srcs/sources_1/new/RGB.v" \
+"../../../../key_led.srcs/sources_1/new/XLJC.v" \
+"../../../../key_led.srcs/sources_1/new/clk_division.v" \
+"../../../../key_led.srcs/sources_1/new/en_out.v" \
+"../../../../key_led.srcs/sources_1/new/key_filter.v" \
+"../../../../key_led.srcs/sources_1/new/top.v" \
+"../../../../key_led.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
